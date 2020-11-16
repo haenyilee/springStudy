@@ -2,11 +2,13 @@ package com.haeni.web;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
+@CrossOrigin("http://localhost")
 public class MusicRestController {
 	@RequestMapping("movie2/movie.do")
 	public String movie2_main(String no)
@@ -37,12 +39,14 @@ public class MusicRestController {
 		   String temp=doc.toString();
 		   temp=temp.substring(temp.indexOf("["),temp.lastIndexOf("]")+1);
 		   //System.out.println(temp);
-		   result+=temp+"}";
+		   result+=temp;
 		   System.out.println(result);
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-	   
+		   result=result.replace("<", "");
+		   result=result.replace(">", "");
+		   result=result.replace("\r", "");
+		   result=result.replace("\n", "");
+		   
+		} catch (Exception e) {}
 		return result;
 	}
 }
