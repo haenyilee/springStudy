@@ -30,9 +30,9 @@
 					<th>근무지</th>
 				</tr>
 				<c:forEach var="vo" items="${list }">
-					<tr class="success">
-						<td><a href="detail.do?empno=${vo.empno}">${vo.empno }</td>
-						<td>${vo.ename }</td>
+					<tr>
+						<td>${vo.empno }</td>
+						<td><a href="detail.do?empno=${vo.empno}">${vo.ename }</td>
 						<td>${vo.job }</td>
 						<td><fmt:formatDate value="${vo.hiredate }" pattern="yyyy-MM-dd"/></td>
 						<td>${vo.sal }</td>
