@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sist</groupId>
 	<artifactId>web</artifactId>
-	<name>OnLineSpringMVCStudy6</name>
+	<name>20201119-R-Procedure-Board</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
