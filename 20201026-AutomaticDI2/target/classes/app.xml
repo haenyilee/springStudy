@@ -5,6 +5,6 @@
 	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
-	<context:component-scan base-package="com.haeni.di"></context:component-scan>
-
+    <!-- 클래스를 패키지 단위로 메모리 할당 -->
+    <context:component-scan base-package="com.sist.di"/>
 </beans>

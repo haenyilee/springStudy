@@ -21,7 +21,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.haeni.di" />
+	<context:component-scan base-package="com.sist.di" />
 	
 	
 	
