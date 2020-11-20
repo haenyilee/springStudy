@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sist.dao.recipe-mapper">
+	<!-- 레시피 총 리스트 데이터 구하기 -->
+	<select id="recipeListData" resultType="RecipeVO" parameterType="hashmap">
+		SELECT no,title,chef,poster,num
+		FROM (SELECT no,title,chef,poster,rownum as num
+		FROM (SELECT no,title,chef,poster
+		FROM recipe))
+		WHERE num BETWEEN #{start} AND #{end}
+	</select>
+	
+	<!-- 레시피 총 페이지 구하기 -->
+	<select id="recipeTotalPage" resultType="int">
+		SELECT CEIL(COUNT(*)/20.0) FROM recipe
+	</select>
+	
+	<!-- 상세 쉐프 출력 -->
+	<select id="recipeChefData" resultType="RecipeVO" parameterType="hashmap">
+	SELECT no,title,chef,poster,num
+		FROM (SELECT no,title,chef,poster,rownum as num
+		FROM (SELECT no,title,chef,poster
+		FROM recipe WHERE chef=#{chef}))
+		WHERE num BETWEEN #{start} AND #{end}
+	</select>
+	
+	<!-- 쉐프 데이터 총 페이지 구하기 -->
+	<select id="recipeTotalPage" resultType="int" parameterType="string">
+		SELECT CEIL(COUNT(*)/20.0) FROM recipe
+		WHERE chef=#{chef}
+	</select>
+	
+</mapper>
