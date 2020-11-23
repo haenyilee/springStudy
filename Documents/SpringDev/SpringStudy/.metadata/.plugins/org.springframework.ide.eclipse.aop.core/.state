@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="20201021-DIstudy2"/>
+<aop-project name="20201021-DIstudy3"/>
+<aop-project name="20201023-Autowire"/>
+<aop-project name="20201023-autowired"/>
+<aop-project name="20201020-springstudy1"/>
+<aop-project name="20201020-springstudy2"/>
+<aop-project name="20201022-DIstudy4"/>
+<aop-project name="20201020-DIstudy1"/>
+</aop-reference-model>

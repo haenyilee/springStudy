@@ -1,0 +1,7 @@
+package com.haeni.autowire;
+
+public class MusicDAO {
+	private String title;
+	private String singer;
+	private String album;
+}

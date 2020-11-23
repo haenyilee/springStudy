@@ -1,0 +1,18 @@
+package com.sist.di2;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextException;
+
+import com.sist.di.Sawon;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		ApplicationContext app=
+				new ApplicationContext("/Users/haeni/Documents/SpringDev/SpringStudy/20201020-DIstudy1/src/main/java/app.xml");
+		Sawon sa=(Sawon)app.getBean("sa");
+		sa.init();
+		sa.print();
+	}
+
+}

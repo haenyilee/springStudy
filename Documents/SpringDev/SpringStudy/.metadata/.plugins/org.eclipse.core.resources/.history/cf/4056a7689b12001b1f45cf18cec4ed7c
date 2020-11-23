@@ -1,0 +1,18 @@
+package com.sist.di2;
+
+import java.util.*;
+
+import org.springframework.context.ApplicationContext;
+
+public class ApplicatonContext {
+	private Map map=new HashMap();
+	public ApplicationContext(String path)
+	{
+		
+	}
+	public Object getBean(String Key)
+	{
+		return map.get(key);
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.haeni.di2;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MainClass {
+	private Sawon sa; // null값
+	public static void main(String[] args) {
+		ApplicationContext app=
+				new ClassPathXmlApplicationContext("app2.xml");
+		Sawon sa=(Sawon)app.getBean("sawon"); // Sawon이라는 클래스명이 자동으로 sawon이라는 소문자 id로 인식됨
+		System.out.println("이름:"+sa.getSaram().getName());
+		System.out.println("성별:"+sa.getSaram().getSex());
+		System.out.println("나이:"+sa.getSaram().getAge());
+		System.out.println("부서:"+sa.getDept());
+		System.out.println("직위:"+sa.getJob());
+	}
+
+}

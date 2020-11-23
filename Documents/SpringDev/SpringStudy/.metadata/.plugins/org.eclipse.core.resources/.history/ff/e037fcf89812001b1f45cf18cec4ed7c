@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 메모리할당하기 : 스프링에서 메모리 할당할 수 있게클래스를 등록해줘야 한다.-->
+	
+	<!-- setter에 값을 채우는 방법(1) -->
+	<bean id="sa" class="com.sist.di.Sawon">
+		<property name="name">
+			<value>심청이</value>
+		</property>
+		<property name="sex" value="여자"/>
+		<property name="age">
+			<value>28</value>
+		</property>
+	</bean>
+	
+	<!-- setter에 값을 채우는 방법(2) -->
+	<bean id="sol" class="com.sist.di.Sawon">
+	</bean>
+	
+	<!-- setter에 값을 채우는 방법(3) -->
+	<bean id="sol" class="com.sist.di.Sawon"
+		p:name=""
+		p:sex=""
+		p:age=""
+	></bean>
+</beans>

@@ -1,0 +1,17 @@
+package com.heani.di;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class MusicModel {
+	@Autowired
+	private MusicDAO dao;
+	@RequestMapping("music/music.do")
+	public String music_music(HttpServletRequest request)
+	{
+		
+		return "music/music"; // 뒤에 .jsp 붙이던 것이 사라짐
+	}
+}

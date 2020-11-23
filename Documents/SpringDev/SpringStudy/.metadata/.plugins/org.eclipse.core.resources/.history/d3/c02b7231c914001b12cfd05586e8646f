@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.haeni.di2.EmpVO" alias="EmpVO"/>
+	</typeAliases>
+	<mappers>
+	</mappers>
+</configuration>

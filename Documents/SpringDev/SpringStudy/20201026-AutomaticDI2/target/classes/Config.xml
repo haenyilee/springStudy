@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+   <typeAliases>
+<!--      <typeAlias type="com.haeni.di.MusicVO" alias="MusicVO"/> -->
+     <typeAlias type="com.haeni.di2.MusicVO" alias="MusicVO"/>
+     <typeAlias type="com.haeni.di2.MovieVO" alias="MovieVO"/>
+   </typeAliases>
+   <mappers>
+<!--       <mapper resource="com/haeni/di/music-mapper.xml"/> -->
+      <mapper resource="com/haeni/di2/music-mapper.xml"/>
+      <mapper resource="com/haeni/di2/movie-mapper.xml"/>
+   </mappers>
+</configuration>

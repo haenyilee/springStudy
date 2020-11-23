@@ -1,0 +1,11 @@
+package com.haeni.di2;
+import java.util.*;
+
+public class EmpVO {
+	private int empno;
+	private String ename;
+	prviate String job;
+	private Date regdate;
+	priavta int sal;
+
+}

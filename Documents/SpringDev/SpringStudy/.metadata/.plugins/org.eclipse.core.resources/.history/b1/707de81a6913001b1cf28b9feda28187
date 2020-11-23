@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<bean id="s1" class="com.haeni.di.Student"
+		p:name="홍길동"
+		p:kor="80"
+		p:end="85"
+		p:math="95"
+	/>
+	<bean id="s1" class="com.haeni.di.Student"
+		p:name="심청이"
+		p:kor="80"
+		p:end="85"
+		p:math="95"
+	/>
+	<bean id="s1" class="com.haeni.di.Student"
+		p:name="박문수"
+		p:kor="80"
+		p:end="85"
+		p:math="95"
+	/>
+	
+	<bean id="school" class="com.haeni.di.School">
+		<property name="list"></property>
+	</bean>
+	
+</beans>

@@ -1,0 +1,28 @@
+package com.haeni.di;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Config2 {
+	@Bean
+	public Sawon sawonInfo()
+	{
+		/*
+		 * map.put("sa",new Sawon())
+		 * 
+		 * public Object getBean(String id)
+		 * {
+		 * 	return map.get(id);
+		 * }
+		 */
+		Sawon s= new Sawon();
+		
+		//DI
+		s.setName("이순신");
+		s.setDept("개발부");
+		s.setJob("과");
+		
+		return s;
+	}
+}

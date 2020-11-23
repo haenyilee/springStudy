@@ -1,0 +1,21 @@
+package com.haeni.autowire;
+
+import org.mybatis.spring.support.SqlSessionDaoSupport;
+import java.util.*;
+
+public class MusicDAO extends SqlSessionDaoSupport{
+	public List<MusicVO> musicAllData()
+	{
+		/*
+		 * getSqlSession() 
+		 * - SqlSession session=ssf.openSession();
+		 * 
+		 * selectList("musicAllData") :
+		 * - list=session.selectList("");
+		 * - session.close();  : 자동처리
+		 * - return list;
+		 */
+		return getSqlSession().selectList("musicAllData");
+		
+	}
+}
