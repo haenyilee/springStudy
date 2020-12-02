@@ -1,0 +1,10 @@
+package com.haeni.di;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		String[] xml= {"app1.xml","app2.xml"};
+
+	}
+
+}

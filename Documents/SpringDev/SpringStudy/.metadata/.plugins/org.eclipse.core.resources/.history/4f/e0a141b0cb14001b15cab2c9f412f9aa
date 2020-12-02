@@ -1,0 +1,6 @@
+package com.haeni.autowire;
+
+import org.mybatis.spring.support.SqlSessionDaoSupport;
+
+public class MusicDAO extends SqlSessionDaoSupport{
+}

@@ -1,0 +1,21 @@
+package com.sist.di2;
+
+import java.util.*;
+
+import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
+
+public class XMLParser extends DefaultHandler{
+	Map map=new HashMap();
+
+	@Override
+	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+		try {
+			if(qName.equals(anObject))
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+}

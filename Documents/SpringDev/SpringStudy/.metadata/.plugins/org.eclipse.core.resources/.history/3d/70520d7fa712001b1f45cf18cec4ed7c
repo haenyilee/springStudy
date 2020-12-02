@@ -1,0 +1,14 @@
+package com.sist.di3;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainClass {
+	public static void main(String[] args) {
+		ApplicationContext app=
+				new ClassPathXmlApplicationContext("/Users/haeni/Documents/SpringDev/SpringStudy/20201020-DIstudy1/src/main/java");
+		MemberList ml=(MemberList)app.getBean("m1");
+		ml.print();
+	}
+
+}

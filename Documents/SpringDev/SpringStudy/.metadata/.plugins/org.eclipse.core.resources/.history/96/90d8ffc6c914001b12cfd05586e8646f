@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.haeni.autowire.MusicVO" alias="MusicVO"/>
+	</typeAliases>
+	<mappers>
+		<mapper resource="com/haeni/autowire/music-mapper.xml">
+		</mapper>
+	</mappers>
+</configuration>

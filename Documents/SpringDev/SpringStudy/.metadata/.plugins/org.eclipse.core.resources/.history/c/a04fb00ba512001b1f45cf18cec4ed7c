@@ -1,0 +1,25 @@
+package com.sist.di3;
+
+public class MemberList {
+	// 생성된 객체도 사용가능하다.
+	private Member mem;
+
+	public Member getMem() {
+		return mem;
+	}
+
+	public void setMem(Member mem) {
+		this.mem = mem;
+	}
+	
+	public void print()
+	{
+		System.out.println("회원번호:"+);
+		System.out.println("이름:"+);
+		System.out.println("성별:"+);
+		System.out.println("주소:"+);
+		System.out.println("전화:"+);
+	}
+	
+
+}

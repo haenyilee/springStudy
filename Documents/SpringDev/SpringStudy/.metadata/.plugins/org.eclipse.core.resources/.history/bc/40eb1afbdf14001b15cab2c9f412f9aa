@@ -1,0 +1,10 @@
+package com.heani.di;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class MusicModel {
+	@RequestMapping("music/music.do")
+	public String music_music(HttpServletRequest request)
+}

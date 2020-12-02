@@ -1,0 +1,26 @@
+package com.haeni.di2;
+
+public class Sawon {
+	private Saram saram;
+	private String dept;
+	public Saram getSaram() {
+		return saram;
+	}
+	public void setSaram(Saram saram) {
+		this.saram = saram;
+	}
+	public String getDept() {
+		return dept;
+	}
+	public void setDept(String dept) {
+		this.dept = dept;
+	}
+	public String getJob() {
+		return job;
+	}
+	public void setJob(String job) {
+		this.job = job;
+	}
+	private String job;
+	
+}

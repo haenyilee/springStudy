@@ -1,0 +1,10 @@
+package com.sist.di2;
+
+import java.util.*;
+
+import org.xml.sax.helpers.DefaultHandler;
+
+public class XMLParser extends DefaultHandler{
+	Map map=new HashMap();
+	
+}

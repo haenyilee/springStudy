@@ -1,0 +1,12 @@
+package com.sist.music;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class MainController {
+	@RequestMapping("main/main.do")
+	public static void main(String[] args) {
+		request
+
+	}
+
+}

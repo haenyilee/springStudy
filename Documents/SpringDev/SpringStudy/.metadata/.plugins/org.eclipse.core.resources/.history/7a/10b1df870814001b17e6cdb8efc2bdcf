@@ -1,0 +1,9 @@
+package com.haeni.di;
+
+public class Config1 {
+	@Bean("sa")
+	public Sawon sawonInfo()
+	{
+		Sawon s = new Sawon();
+	}
+}

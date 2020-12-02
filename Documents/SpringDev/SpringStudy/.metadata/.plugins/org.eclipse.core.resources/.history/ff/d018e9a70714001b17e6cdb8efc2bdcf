@@ -1,0 +1,22 @@
+package com.haeni.di;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Config2 {
+	@Bean
+	public Sawon sawonInfo()
+	{
+		Sawon s= new Sawon();
+		
+		//DI
+		s.getName("이순신");
+		s.getDept("개발부");
+		s.getJob("과");
+		
+		return s; // 객체 생성이 되는 ㅜ
+		
+		//
+	}
+}
